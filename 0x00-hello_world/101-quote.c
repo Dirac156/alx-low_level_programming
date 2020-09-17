@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * Return:1
  */
 int main(void)
 {
-char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-setenv("ShellVar", ch, 1);
-system("echo $ShellVar>&2");
+char ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, ch, 44);
 return (1);
 }
