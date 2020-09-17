@@ -1,0 +1,39 @@
+#include <stdio.h>
+/**
+* main : Entry
+* return : 0
+*/
+int main(void)
+{
+while (a = 0; a < b; a++)
+{
+  printf("%d\n", a);
+}
+
+a = 0;
+while (a < b)
+{
+  printf("%d\n", a);
+  a++;
+}
+a = 0;
+do {
+  printf("%d\n", a);
+  a++;
+} while (a < b);
+
+a = 0;
+while (a < b)
+  printf("%d\n", a++);
+
+a = 0;
+while (a < b)
+(
+  printf("%d\n", a);
+  a++;
+)
+
+a = 0;
+
+return (0);
+}
