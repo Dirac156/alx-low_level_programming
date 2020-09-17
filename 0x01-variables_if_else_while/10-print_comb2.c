@@ -14,17 +14,14 @@ for (y = 0; y < 10; y++)
 {
 putchar (i + '0');
 putchar (y + '0');
-if (i < 10)
+if (i == 9 && y == 9)
 {
-if (y < 9)
-{
-putchar (',');
-putchar (' ');
-}
+break;
 }
 else
 {
-break;
+putchar (',');
+putchar (' ');
 }
 }
 }
