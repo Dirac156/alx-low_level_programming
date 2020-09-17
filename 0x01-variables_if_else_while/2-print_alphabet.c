@@ -2,11 +2,12 @@
 
 /**
  * main - Entry point
- * Return:1
+ * Return:0
  */
 int main(void)
 {
-for (int x = 'a'; x <= 'z'; x++)
+int x;
+for (x = 'a'; x <= 'z'; x++)
 {
 putchar (x);
 }
