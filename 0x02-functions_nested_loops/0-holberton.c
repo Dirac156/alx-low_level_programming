@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
-#include "_putchar.c"
+
 
 /**
  * main - Entry point
