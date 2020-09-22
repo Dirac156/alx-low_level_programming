@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include "holberton.h"
-
-
 /**
  * print_alphabet - print_alphabet
  *
