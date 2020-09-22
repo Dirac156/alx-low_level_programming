@@ -7,7 +7,7 @@
  *
  * Return:void
  */
-void print_alphabet(void)
+void print_alphabet()
 {
 int x;
 for (x = 'a'; x <= 'z'; x++)
