@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-char text_printed[] = "Holberton";
+char text_printed[9] = "Holberton";
 int count;
 
 for (count = 0; count < 9; count++)
