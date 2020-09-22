@@ -1,18 +1,7 @@
 #include <stdio.h>
-/**
- *makeItSo - return the string in normal order
- * @str : first argument
- */
+#include "holberton.h"
+#include "_putchar.c"
 
-void makeItSo(char *str)
-{
-if (*str == '\0')
-{
-return;
-}
-makeItSo(str + 1);
-putchar(*str);
-}
 /**
  * main - Entry point
  *
@@ -20,6 +9,13 @@ putchar(*str);
  */
 int main(void)
 {
-makeItSo("\nnotrebloH");
+char text_printed[] = "Holberton";
+int count;
+
+for (count = 0; count < 9; count++)
+{
+_putchar(text_printed[count]);
+}
+_putchar('\n');
 return (0);
 }
