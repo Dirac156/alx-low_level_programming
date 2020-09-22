@@ -2,5 +2,7 @@
 #define HOLBERTON_H
 
 #include <stdio.h>
-extern void positive_or_negative(int);
-#endif
+
+void positive_or_negative(int i);
+
+#endif /* HOLBERTON_H */
