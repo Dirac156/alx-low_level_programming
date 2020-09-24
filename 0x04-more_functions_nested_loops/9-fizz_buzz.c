@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -27,4 +28,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
+return (0);
 }
