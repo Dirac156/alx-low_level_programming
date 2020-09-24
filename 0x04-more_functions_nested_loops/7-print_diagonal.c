@@ -15,7 +15,7 @@ while (count < n)
 {
 count++;
 i = count;
-while (i > 0)
+while (i > 1)
 {
 _putchar(' ');
 i--;
