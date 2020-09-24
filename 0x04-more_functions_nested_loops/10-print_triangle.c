@@ -9,6 +9,8 @@ void print_triangle(int size)
 {
 int count, i;
 count = 0;
+if (size > 0)
+{
 while (count < size)
 {
 i = size;
@@ -23,6 +25,11 @@ _putchar('#');
 i--;
 }
 count++;
+_putchar('\n');
+}
+}
+else
+{
 _putchar('\n');
 }
 }
