@@ -9,28 +9,30 @@ void puts_half(char *str)
 {
 int i;
 int a;
-for (a = 0; str[a] != '\0'; a++)
-{
-continue;
-}
-i = 0;
-if (a % 2 == 0)
-{
-i = a/2;
 while (str[i] != '\0')
 {
-_putchar(str[i]);
 i++;
 }
-}
-else if (a % 2 == 1)
+
+if (i % 2 == 1)
 {
-i = (a + 1) / 2;
-while (str[i] != '\0')
+a = (i + 1) / 2;
+while (str[a] != '\0')
 {
-_putchar(str[i]);
-i++;
+_putchar(str[n]);
+n++;
 }
 }
+
+else
+{
+n = (i / 2);
+while (str[n] != '\0')
+{
+_putchar(str[n]);
+n++;
+}
+}
+
 _putchar('\n');
 }
