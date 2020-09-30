@@ -14,10 +14,22 @@ for (a = 0; str[a] != '\0'; a++)
 continue;
 }
 i = 0;
+if (a % 2 == 0)
+{
 while (i < a/2)
 {
 _putchar(str[i + a/2]);
 i++;
+}
+}
+else
+{
+while (i < a/2)
+{
+_putchar(str[i + a/2]);
+i++;
+}
+_putchar(str[a - 1]);
 }
 _putchar('\n');
 }
