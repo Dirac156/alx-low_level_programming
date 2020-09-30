@@ -22,14 +22,14 @@ _putchar(str[i + a/2]);
 i++;
 }
 }
-else
+else if (a % 2 == 1)
 {
-while (i < a/2)
+i = (a + 1) / 2;
+while (str[i] != '\0')
 {
-_putchar(str[i + (a-1)/2]);
+_putchar(str[i]);
 i++;
 }
-_putchar(str[a - 1]);
 }
 _putchar('\n');
 }
