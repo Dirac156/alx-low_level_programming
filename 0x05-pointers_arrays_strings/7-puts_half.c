@@ -17,7 +17,7 @@ i = 0;
 if (a % 2 == 0)
 {
 i = a/2;
-while (str[i] != '\n')
+while (str[i] != '\0')
 {
 _putchar(str[i]);
 i++;
