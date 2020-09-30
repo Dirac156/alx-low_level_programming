@@ -26,7 +26,7 @@ else
 {
 while (i < a/2)
 {
-_putchar(str[i + a/2]);
+_putchar(str[i + (a-1)/2]);
 i++;
 }
 _putchar(str[a - 1]);
