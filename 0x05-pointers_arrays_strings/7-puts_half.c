@@ -16,9 +16,10 @@ continue;
 i = 0;
 if (a % 2 == 0)
 {
-while (i < a/2)
+i = a/2;
+while (str[i] != '\n')
 {
-_putchar(str[i + a/2]);
+_putchar(str[i]);
 i++;
 }
 }
