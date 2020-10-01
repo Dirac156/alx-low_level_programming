@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - check the code for Holberton School students.
+ * _strncpy - check the code for Holberton School students.
  *@dest : variable
  *@src : variable
  *@n : the integer
