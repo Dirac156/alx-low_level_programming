@@ -9,16 +9,19 @@ char *rot13(char *n)
 {
 int i;
 int a;
-char b[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char c[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+int d;
+char b[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char c[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 for (i = 0; n[i] != '\0'; i++)
 {
-for (a = 0; a <= 52; a++)
+d = 1;
+for (a = 0; a < 52; a++)
 {
-if (b[a] == n[i])
+if (n[i] == b[a] && d == 1)
 {
 n[i] = c[a];
+d = 0;
 }
 }
 }
