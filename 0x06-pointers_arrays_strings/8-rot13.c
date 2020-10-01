@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * leet - check the code for Holberton School students.
+ * rot13 - check the code for Holberton School students.
  *@n : variable
  * Return: return
  */
