@@ -1,8 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdio.h>
-#include <ctype.h>
 /**
  * rot13 - check the code for Holberton School students.
  *@n : variable
@@ -13,12 +9,12 @@ char *rot13(char *n)
 {
 int i;
 int a;
-char b[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char c[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char b[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char c[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 for (i = 0; n[i] != '\0'; i++)
 {
-for (a = 0; a <= 51; a++)
+for (a = 0; a <= 52; a++)
 {
 if (b[a] == n[i])
 {
