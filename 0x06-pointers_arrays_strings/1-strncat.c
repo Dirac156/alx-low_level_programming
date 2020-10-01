@@ -16,11 +16,10 @@ for (i = 0; dest[i] != '\0'; i++)
 {
 continue;
 }
-for (a = 0; a <= n*2; a++)
+for (a = 0; a <= n; a++)
 {
 dest[i] += src[a];
 i++;
 }
-dest += '\0';
 return (dest);
 }
