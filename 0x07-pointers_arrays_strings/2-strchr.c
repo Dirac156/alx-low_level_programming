@@ -19,14 +19,6 @@ while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-int b, c;
-b = 0;
-c = i;
-char d[a - i - 1];
-while (c < a)
-{
-d[b++] = s[c++];
-}
 return (s);
 }
 i++;
