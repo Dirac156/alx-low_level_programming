@@ -28,6 +28,6 @@ return (0);
 }
 else
 {
-return (s);
+return (0);
 }
 }
