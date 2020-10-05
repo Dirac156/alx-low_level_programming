@@ -10,6 +10,8 @@ char *_strpbrk(char *s, char *accept)
 {
 int i = 0;
 int a = 0;
+if (*s != '\0' && *accept != '\0')
+{
 while (accept[a] != '\0')
 {
 while (s[i] != '\0')
@@ -23,4 +25,9 @@ i++;
 a++;
 }
 return (0);
+}
+else
+{
+return (s);
+}
 }
