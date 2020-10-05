@@ -3,10 +3,8 @@
 #include <stdio.h>
 
 /**
-  * _strstr - function
-  * @haystack : variable
-  * @needle : variable
-  * Return: return
+  * print_chessboard - function
+  * @a : variable
   */
 
 void print_chessboard(char (*a)[8])
