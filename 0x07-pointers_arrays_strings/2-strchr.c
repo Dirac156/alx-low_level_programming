@@ -27,7 +27,6 @@ while (c < a)
 {
 d[b++] = s[c++];
 }
-s = d;
 return (s);
 }
 i++;
