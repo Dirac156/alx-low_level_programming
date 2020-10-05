@@ -1,8 +1,5 @@
 #include "holberton.h"
 #include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * _strchr - function
@@ -14,7 +11,6 @@ char *_strchr(char *s, char c)
 {
 int i = 0;
 int a = 0;
-
 while (s[a] != '\0')
 {
 a++;
@@ -36,5 +32,5 @@ return (s);
 }
 i++;
 }
-return NULL;
+return (0);
 }
