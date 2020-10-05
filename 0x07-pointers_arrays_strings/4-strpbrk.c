@@ -28,6 +28,13 @@ return (0);
 }
 else
 {
+if (s[i] == accept[a])
+{
+return (s);
+}
+else
+{
 return (0);
+}
 }
 }
