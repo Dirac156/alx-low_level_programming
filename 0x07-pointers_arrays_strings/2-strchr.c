@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 
 /**
  * _strchr - function
@@ -18,5 +17,5 @@ return (s);
 }
 i++;
 }
-return NULL;
+return (0);
 }
