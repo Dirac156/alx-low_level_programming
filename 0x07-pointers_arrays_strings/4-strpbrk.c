@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <string.h>
+
 /**
  * _strpbrk - function
  * @s : pointer to check if the value is inside
@@ -8,6 +8,33 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-s += strcspn(s, accept);
-return (*s ? (char *)s : 0);
+int i = 0;
+int a = 0;
+if (*s != '\0' && *accept != '\0')
+{
+while (accept[a] != '\0')
+{
+while (s[i] != '\0')
+{
+if (s[i] == accept[a])
+{
+return (s);
+}
+i++;
+}
+a++;
+}
+return (0);
+}
+else
+{
+if (s[i] == accept[a])
+{
+return (s);
+}
+else
+{
+return (0);
+}
+}
 }
