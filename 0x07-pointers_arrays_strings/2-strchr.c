@@ -15,7 +15,6 @@ while (s[a] != '\0')
 {
 a++;
 }
-char d[a];
 while (s[i] != '\0')
 {
 if (s[i] == c)
@@ -23,6 +22,7 @@ if (s[i] == c)
 int b, c;
 b = 0;
 c = i;
+char d[a - i];
 while (c < a)
 {
 d[b++] = s[c++];
