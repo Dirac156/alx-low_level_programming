@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * set_string - check the code for Holberton School students.
+ *@s : variable
+ *@to : variable
  */
 
 void set_string(char **s, char *to)
