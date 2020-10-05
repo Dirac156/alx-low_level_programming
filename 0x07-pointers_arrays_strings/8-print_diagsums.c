@@ -9,18 +9,19 @@
 
 void print_diagsums(int *a, int size)
 {
+int x, sum1 = 0, sum2 = 0;
 
-int i, j;
-int sum1 = 0;
-for (i = 0; i < size; i++)
+for (x = 0; x < size; x++)
 {
-for (j = 0; j <size; j++)
+sum1 += a[x];
+a += size;
+}
+a -= size;
+
+for (x = 0; x < size; x++)
 {
-if (i == j)
-{
-sum1 = sum1 + a[j];
+sum2 += a[x];
+a -= size;
 }
-}
-}
-printf("%d\n", sum1);
+printf("%d, %d\n", sum1, sum2);
 }
