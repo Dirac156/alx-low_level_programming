@@ -8,33 +8,19 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-int i = 0;
-int a = 0;
-if (*s != '\0' && *accept != '\0')
+int i;
+while (*s != '\0')
 {
-while (accept[a] != '\0')
+i = 0;
+while (accept[i] != '\0')
 {
-while (s[i] != '\0')
-{
-if (s[i] == accept[a])
+if (*s == accept[i])
 {
 return (s);
 }
 i++;
 }
-a++;
+s++;
 }
 return (0);
-}
-else
-{
-if (s[i] == accept[a])
-{
-return (s);
-}
-else
-{
-return (0);
-}
-}
 }
