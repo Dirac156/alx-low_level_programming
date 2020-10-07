@@ -9,4 +9,5 @@ int _pow_recursion(int x, int y);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int isPalRec(char str[], int s, int e);
+int wildcmp(char *s1, char *s2);
 #endif
