@@ -3,7 +3,8 @@
 
 /**
  * _pow_recursion - check the code for Holberton School students.
- *@n : parameter
+ *@x : parameter
+ *@y : variable
  *Return: lenfth of s
  */
 
@@ -19,7 +20,7 @@ return (1);
 }
 else if (y != 0)
 {
-return ( x * _pow_recursion(x, y-1));
+return (x * _pow_recursion(x, y - 1));
 }
 return (0);
 }
