@@ -10,17 +10,13 @@ int main(void)
 {
     int r;
 
-    r = _pow_recursion(1, 10);
+    r = is_palindrome("level");
     printf("%d\n", r);
-    r = _pow_recursion(1024, 0);
+    r = is_palindrome("redder");
     printf("%d\n", r);
-    r = _pow_recursion(2, 16);
+    r = is_palindrome("holberton");
     printf("%d\n", r);
-    r = _pow_recursion(5, 2);
-    printf("%d\n", r);
-    r = _pow_recursion(5, -2);
-    printf("%d\n", r);
-    r = _pow_recursion(-5, 3);
+    r = is_palindrome("step on no pets");
     printf("%d\n", r);
     return (0);
 }
