@@ -10,29 +10,13 @@ int main(void)
 {
     int r;
 
-    r = wildcmp("main.c", "*.c");
+    r = is_palindrome("level");
     printf("%d\n", r);
-    r = wildcmp("main.c", "m*a*i*n*.*c*");
+    r = is_palindrome("redder");
     printf("%d\n", r);
-    r = wildcmp("main.c", "main.c");
+    r = is_palindrome("holberton");
     printf("%d\n", r);
-    r = wildcmp("main.c", "m*c");
-    printf("%d\n", r);
-    r = wildcmp("main.c", "ma********************************c");
-    printf("%d\n", r);
-    r = wildcmp("main.c", "*");
-    printf("%d\n", r);
-    r = wildcmp("main.c", "***");
-    printf("%d\n", r);
-    r = wildcmp("main.c", "m.*c");
-    printf("%d\n", r);
-    r = wildcmp("main.c", "**.*c");
-    printf("%d\n", r);
-    r = wildcmp("main-main.c", "ma*in.c");
-    printf("%d\n", r);
-    r = wildcmp("main", "main*d");
-    printf("%d\n", r);
-    r = wildcmp("abc", "*b");
+    r = is_palindrome("step on no pets");
     printf("%d\n", r);
     return (0);
 }

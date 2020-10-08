@@ -1,30 +1,55 @@
 #include "holberton.h"
-#include <string.h>
 
 /**
- * is_prime_number - check the code for Holberton School students.
- *@n : parameter
- *Return: lenfth of s
+ *check_num - recursion loop
+ *@num: number
+ *@i: iterator
+ *Return: returns 1 or 0
  */
 
-int is_prime_number(int n)
+int check_num(int num, int i)
 {
-double i = n/2;
-if(i == 1)
+
+if (i == num - 1)
 {
-return 1;
+return (1);
 }
-else
+
+else if (num % i == 0)
 {
-if(n % i ==0)
-{
-return 0;
-}
-else
-{
-i = i-1;
-is_prime_number(n);
-}
-}
 return (0);
+}
+
+if (num % i != 0)
+{
+return (check_num(num, i + 1));
+}
+
+return (0);
+
+}
+
+/**
+ *is_prime_number - evaluate prime or not
+ *@num: number
+ *Return: Return 1 if Prime, 0 if otherwise
+ */
+
+int is_prime_number(int num)
+{
+
+int iter;
+
+iter = 2;
+
+if (num < 2)
+{
+return (0);
+}
+if (num == 2)
+{
+return (1);
+}
+
+return (check_num(num, iter));
 }
