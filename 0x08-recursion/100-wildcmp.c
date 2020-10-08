@@ -2,8 +2,10 @@
 #include <string.h>
 
 /**
- * _puts_recursion - check the code for Holberton School students.
- *@s : parameter
+ * wildcmp - check the code for Holberton School students.
+ *@s1 : parameter
+ *@s2 : parameter
+ *Return: return
  */
 
 
@@ -21,7 +23,7 @@ wildcmp(s1 + 1, s2);
 }
 else
 {
-wildcmp (s1, s2 + 1);
+wildcmp(s1, s2 + 1);
 }
 }
 else if (*s2 == '*')
