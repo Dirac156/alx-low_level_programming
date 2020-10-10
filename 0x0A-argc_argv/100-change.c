@@ -38,42 +38,26 @@ void checker(int c, int b)
 {
 if (c >= 25)
 {
-if (c - 25 == 0)
-{
-printf("%d\n", b + 1);
-}
 checker(c - 25, b + 1);
 }
 else if (c >= 10)
 {
-if (c - 10 == 0)
-{
-printf("%d\n", b + 1);
-}
 checker(c - 10, b + 1);
 }
 else if (c >= 5)
 {
-if (c - 5 == 0)
-{
-printf("%d\n", b + 1);
-}
 checker(c - 5, b + 1);
 }
 else if (c >= 2)
 {
-if (c - 2 == 0)
-{
-printf("%d\n", b + 1);
-}
 checker(c - 2, b + 1);
 }
 else if (c >= 1)
 {
-if (c - 1 == 0)
-{
-printf("%d\n", b + 1);
-}
 checker(c - 1, b + 1);
+}
+else if (c == 0)
+{
+printf("%d\n", b);
 }
 }
