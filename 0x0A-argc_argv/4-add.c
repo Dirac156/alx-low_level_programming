@@ -17,9 +17,7 @@ printf("0\n");
 }
 else if (argc == 3)
 {
-int j = atoi(argv[1]);
-int b = atoi(argv[2]);
-if (j != 0 && b != '0')
+if (isdigit(argv[1]) != 0 && isdigit(argv[2]) != 0)
 {
 int add;
 add = atoi(argv[1]) + atoi(argv[2]);
