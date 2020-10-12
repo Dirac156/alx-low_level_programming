@@ -11,23 +11,19 @@
 
 int main(int argc, char const *argv[])
 {
-if (argc == 1)
+int i, j, sum;
+for (i = 1; i < argc; i++)
 {
-printf("0\n");
-}
-else if (argc == 3)
+for (j = 0; argv[1][j] != '\0'; j++)
 {
-if (isdigit(argv[1]) != 0 && isdigit(argv[2]) != 0)
-{
-int add;
-add = atoi(argv[1]) + atoi(argv[2]);
-printf("%d\n", add);
-}
-else
+if (isdigit(argv[i][j]) == 0)
 {
 printf("Error\n");
 return (-1);
 }
 }
+sum += atoi(argv[i]);
+}
+printf("%d\n", sum);
 return (0);
 }
