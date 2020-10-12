@@ -33,7 +33,7 @@ return (0);
   *@c : variable
   *@b : variable
   */
-
+  
 void checker(int c, int b)
 {
 if (c >= 25)
