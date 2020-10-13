@@ -21,6 +21,7 @@ while (ss[i] == '\0' && str[i] != '\0')
 ss[i] = str[i];
 i++;
 }
+ss[i] = '\0';
 }
 return (ss);
 }
