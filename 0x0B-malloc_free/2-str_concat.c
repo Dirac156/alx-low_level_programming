@@ -18,7 +18,7 @@ for (b = 0; s2[b] != '\0'; b++)
 {
 continue;
 }
-char *ss = malloc((a + b) * sizeof(char *) + 1);
+char *ss = malloc(a + b + 1);
 int i = 0;
 if (ss == NULL)
 {
