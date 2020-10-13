@@ -3,46 +3,45 @@
 #include "holberton.h"
 
 /**
+ * *str_concat - main function
+ * @s1: cariable
+ * @s2: variable
+ * Return: return
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+
+int count1 = getlen(s1), count2 = getlen(s2), a;
+char *ret = malloc((count1 + count2) * sizeof(char) + 2);
+if (ret == NULL)
+	return (NULL);
+if (s1 == NULL)
+	s1 = "";
+if (s2 == NULL)
+	s2 = "";
+int count = count1 + count2;
+for (a = 0; a < count; a++)
+{
+if (a < count1)
+ret[a] = s1[a];
+else
+ret[a] = s2[a - count1];
+}
+return (ret);
+}
+
+/**
  * _strlen - main function
  * @s: variable
  * Return: return
  */
 
 
-int _strlen(char *s)
+int getlen(char *s)
 {
-int size = 0;
-for (; s[size] != '\0'; size++)
+int count = 0;
+for (; s[count] != '\0'; count++)
 ;
-return (size);
-}
-
-/**
- * *str_concat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * Return: pointer
- */
-
-char *str_concat(char *s1, char *s2)
-{
-
-int size1 = _strlen(s1), size2 = _strlen(s2), i;
-char *m = malloc((size1 + size2) * sizeof(char));
-if (m == NULL)
-	return (NULL);
-if (s1 == NULL)
-	s1 = "";
-if (s2 == NULL)
-	s2 = "";
-
-for (i = 0; i <= size1 + size2; i++)
-{
-	if (i < size1)
-		m[i] = s1[i];
-	else
-		m[i] = s2[i - size1];
-}
-
-return (m);
+return (count);
 }
