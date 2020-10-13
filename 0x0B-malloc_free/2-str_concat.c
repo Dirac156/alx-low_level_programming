@@ -1,46 +1,37 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "holberton.h"
+#include <stdlib.h>
 
 /**
- * getlen - main function
- * @s: variable
- * Return: return
+ * str_concat - function that concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ *
+ * Return: NULL on failure
  */
-
-
-int getlen(char *s)
-{
-int count = 0;
-for (; s[count] != '\0'; count++)
-;
-return (count);
-}
-
-/**
- *str_concat - main function
- * @s1: cariable
- * @s2: variable
- * Return: return
- */
-
 char *str_concat(char *s1, char *s2)
 {
-int count1 = getlen(s1), count2 = getlen(s2), a;
-char *ret = malloc((count1 + count2) * sizeof(char) + 1);
-if (ret == NULL)
-	return (NULL);
+char *concat_str;
+int index, concat_index = 0, len = 0;
+
 if (s1 == NULL)
 	s1 = "";
+
 if (s2 == NULL)
 	s2 = "";
-int count = count1 + count2;
-for (a = 0; a <= count; a++)
-{
-if (a < count1)
-ret[a] = s1[a];
-else if (a <= count)
-ret[a] = s2[a - count1];
-}
-return (ret);
+
+for (index = 0; s1[index] || s2[index]; index++)
+	len++;
+
+concat_str = malloc(sizeof(char) * len);
+
+if (concat_str == NULL)
+	return (NULL);
+
+for (index = 0; s1[index]; index++)
+	concat_str[concat_index++] = s1[index];
+
+for (index = 0; s2[index]; index++)
+	concat_str[concat_index++] = s2[index];
+
+return (concat_str);
 }
