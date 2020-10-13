@@ -22,7 +22,7 @@ while (str[j] != 0)
 {
 j++;
 }
-ret = malloc(1 + (j * sizeof(*str)));
+ret = malloc(1 + (j *sizeof(*str)));
 if (ret == NULL)
 {
 return (NULL);
