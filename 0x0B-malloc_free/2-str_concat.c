@@ -11,6 +11,10 @@ char *str_concat(char *s1, char *s2)
 {
 char *ss = malloc(sizeof(s1) + sizeof(s2) - 1);
 int i = 0;
+if (ss == NULL)
+{
+return (NULL);
+}
 while (s1[i] != '\0')
 {
 if (s1 == NULL)
