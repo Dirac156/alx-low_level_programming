@@ -14,17 +14,22 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 int **ret = malloc(sizeof(int *) * height);
+if (ret == NULL)
+{
+return (NULL);
+}
 int a;
 for (a = 0; a < height; a++)
 {
 ret[a] = malloc(sizeof(int) * width);
 }
-if (ret == NULL)
+int b, c;
+for (b = 0; b < height; b++)
 {
-return (NULL);
+for (c = 0; c < width; c++)
+{
+ret[b][c] = 0;
 }
-else
-{
+}
 return (ret);
-}
 }
