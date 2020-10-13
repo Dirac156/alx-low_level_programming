@@ -9,14 +9,14 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-int a, b;
-for (a = 0; s1[a] != '\0'; a++)
+int a = 0, b = 0;
+while (s1[a] != '\0')
 {
-continue;
+a++;
 }
-for (b = 0; s2[b] != '\0'; b++)
+while (s2[b] != '\0')
 {
-continue;
+b++;
 }
 char *ss = malloc((a + b) * sizeof(char *) + 1);
 int i = 0;
