@@ -15,7 +15,6 @@ while (s1[i] != '\0')
 {
 if (s1 == NULL)
 {
-ss[i] = ' ';
 break;
 }
 else
@@ -29,7 +28,6 @@ while (s2[j] != '\0')
 {
 if (s2 == NULL)
 {
-ss[i] = ' ';
 break;
 }
 else
