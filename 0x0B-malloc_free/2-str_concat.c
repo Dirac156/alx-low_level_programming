@@ -21,7 +21,7 @@ if (s1 == NULL)
 if (s2 == NULL)
 	s2 = "";
 int count = count1 + count2;
-for (a = 0; a < count; a++)
+for (a = 0; a <= count; a++)
 {
 if (a < count1)
 ret[a] = s1[a];
