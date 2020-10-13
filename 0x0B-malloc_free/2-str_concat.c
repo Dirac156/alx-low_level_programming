@@ -18,11 +18,19 @@ for (b = 0; s2[b] != '\0'; b++)
 {
 continue;
 }
-char *ss = malloc(a + b + 1);
+char *ss = malloc((a + b) * sizeof(char *) + 1);
 int i = 0;
 if (ss == NULL)
 {
 return (NULL);
+}
+if (s1 == NULL)
+{
+s1 = "";
+}
+if (s2 == NULL)
+{
+s2 = "";
 }
 while (s1[i] != '\0')
 {
