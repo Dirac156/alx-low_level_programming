@@ -15,11 +15,18 @@ if (size == 0)
 return (NULL);
 }
 s = malloc(sizeof(char) * size);
-int i = 0;
-while (s[i] == '\0')
+if (s == NULL)
+{
+return (NULL);
+}
+else
+{
+unsigned int i = 0;
+while (i < size)
 {
 s[i] = c;
 i++;
+}
 }
 return (s);
 }
