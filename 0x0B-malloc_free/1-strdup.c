@@ -1,6 +1,8 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+
 /**
   *_strdup - main function
   *@str : the car that will have the size
@@ -9,7 +11,7 @@
 char *_strdup(char *str)
 {
 int i = 0;
-char *ss = malloc(sizeof(str));
+char *ss = malloc(strlen(str) * sizeof(str));
 if (ss == NULL || str == NULL)
 {
 return (NULL);
