@@ -18,7 +18,7 @@ while (s2[b] != '\0')
 {
 b++;
 }
-char *ss = malloc((a + b) * sizeof(char *) + 1);
+char *ss = malloc((a + b) * sizeof(char) + 1);
 int i = 0;
 if (ss == NULL)
 {
