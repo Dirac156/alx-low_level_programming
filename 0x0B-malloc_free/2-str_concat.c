@@ -3,7 +3,7 @@
 #include "holberton.h"
 
 /**
- * _strlen - main function
+ * getlen - main function
  * @s: variable
  * Return: return
  */
@@ -18,7 +18,7 @@ return (count);
 }
 
 /**
- * *str_concat - main function
+ *str_concat - main function
  * @s1: cariable
  * @s2: variable
  * Return: return
