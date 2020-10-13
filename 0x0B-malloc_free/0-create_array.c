@@ -14,7 +14,7 @@ if (size == 0)
 {
 return (NULL);
 }
-s = malloc(sizeof(char *) * size);
+s = malloc(sizeof(char) * size);
 if (s == NULL)
 {
 return (NULL);
@@ -22,7 +22,7 @@ return (NULL);
 else
 {
 unsigned int i = 0;
-while (i < size)
+while (s[i] == '\0')
 {
 s[i] = c;
 i++;
