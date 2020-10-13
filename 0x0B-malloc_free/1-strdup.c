@@ -15,7 +15,8 @@ if (str == NULL)
 return (NULL);
 }
 int i = 0;
-char *ss = malloc(strlen(str) * sizeof(str) - 1);
+int len = strlen(str);
+char *ss = malloc(len);
 if (ss == NULL)
 {
 return (NULL);
