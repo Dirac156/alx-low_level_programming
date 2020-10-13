@@ -10,24 +10,29 @@
   */
 char *_strdup(char *str)
 {
+int i, j;
+char *ret;
+
 if (str == NULL)
 {
 return (NULL);
 }
-int i = 0;
-int len = strlen(str);
-char *ss = malloc(len);
-if (ss == NULL)
+j = 0;
+while (str[j] != 0)
+{
+j++;
+}
+ret = malloc(1 + (j * sizeof(*str)));
+if (ret == NULL)
 {
 return (NULL);
 }
 else
 {
-while (ss[i] == '\0' && str[i] != '\0')
+for (i = 0; i < j; i++)
 {
-ss[i] = str[i];
-i++;
+ret[i] = str[i];
 }
-return (ss);
 }
+return (ret);
 }
