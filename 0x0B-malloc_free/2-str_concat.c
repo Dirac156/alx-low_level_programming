@@ -9,7 +9,10 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-char *ss = malloc(sizeof(s1) + sizeof(s2));
+char *ss = malloc(14);
+// printf("%ld\n", sizeof(s1));
+// printf("%ld\n", sizeof(s2));
+// printf("%ld\n", sizeof(ss));
 int i = 0;
 if (ss == NULL)
 {
