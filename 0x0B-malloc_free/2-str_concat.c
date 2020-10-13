@@ -9,7 +9,7 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-char *ss = malloc(sizeof(s1) + sizeof(s2) - 1);
+char *ss = malloc(sizeof(s1) + sizeof(s2));
 int i = 0;
 if (ss == NULL)
 {
@@ -41,6 +41,5 @@ j++;
 i++;
 }
 }
-ss[i] = '\0';
 return (ss);
 }
