@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
   *malloc_checked - check if malloc library is assigning memories
   *@b: variable
@@ -8,10 +9,14 @@
 
 void *malloc_checked(unsigned int b)
 {
-void *ptr =  malloc(b + 1);
-if (ptr != NULL)
+int *ptr;
+ptr = malloc(b);
+if (ptr == NULL)
+{
+exit(98);
+}
+else
 {
 return (ptr);
 }
-exit(98);
 }
