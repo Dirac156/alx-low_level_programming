@@ -1,22 +1,16 @@
 #include "holberton.h"
-#include <stdlib.h>
-#include <stdio.h>
-/**
-  *malloc_checked - check if malloc library is assigning memories
-  *@b: variable
-  *Return: integer
-  */
 
+/**
+ * malloc_checked - allocates memory using malloc
+ * @b: number of bytes to be malloced
+ * Return: returns a void pointer
+ */
 void *malloc_checked(unsigned int b)
 {
-int *ptr;
-ptr = malloc(b);
-if (ptr == NULL)
-{
-exit(98);
-}
-else
-{
-return (ptr);
-}
+	void *ptr;
+
+	ptr = malloc(b);
+	if (!ptr)
+		exit(98);
+	return (ptr);
 }
