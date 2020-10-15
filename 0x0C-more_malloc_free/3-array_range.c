@@ -20,7 +20,7 @@ if (ptr == NULL)
 return (NULL);
 }
 t = min;
-while (i < max - min)
+while (i < max - min + 1)
 {
 ptr[i] = t;
 t++;
