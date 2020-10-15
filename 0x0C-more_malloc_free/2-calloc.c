@@ -18,7 +18,7 @@ if (ptr == NULL)
 {
 return (NULL);
 }
-while (count <= nmemb * size)
+while (count < nmemb * size)
 {
 ptr[count] = 0;
 count++;
