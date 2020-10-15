@@ -13,12 +13,12 @@ if (size == 0 || nmemb == 0)
 {
 return (NULL);
 }
-char *ptr = malloc(nmemb * size);
+char *ptr = malloc((sizeof(char) * nmemb * size) + 1);
 if (ptr == NULL)
 {
 return (NULL);
 }
-while (count < nmemb * size)
+while (count < nmemb * size + 1)
 {
 ptr[count] = 0;
 count++;
