@@ -14,7 +14,7 @@ if (min > max)
 {
 return (NULL);
 }
-ptr = malloc(sizeof(int) * (max - min) + 1);
+ptr = malloc(sizeof(int) * (max - min));
 if (ptr == NULL)
 {
 return (NULL);
@@ -26,6 +26,5 @@ ptr[i] = t;
 t++;
 i++;
 }
-ptr[i] = '\0';
 return (ptr);
 }
