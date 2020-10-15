@@ -14,13 +14,13 @@ if (min > max)
 {
 return (NULL);
 }
-ptr = malloc(sizeof(int) * (max - min) + 1);
+ptr = malloc(sizeof(int) * (max - min));
 if (ptr == NULL)
 {
 return (NULL);
 }
 t = min;
-while (i < max - min + 1)
+while (i < max - min)
 {
 ptr[i] = t;
 t++;
