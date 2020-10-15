@@ -13,11 +13,11 @@ unsigned int count = 0;
 if (size == 0 || nmemb == 0)
 return (NULL);
 
-int *ptr = malloc(nmemb * size);
+char *ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 
-while (count < nmemb)
+while (count < nmemb * size)
 {
 ptr[count] = 0;
 count++;
