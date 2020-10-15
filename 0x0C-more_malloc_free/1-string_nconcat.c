@@ -20,12 +20,11 @@ for (; s2[lens1] != '\0'; lens1++)
 for (; s2[lens2] != '\0'; lens2++)
 ;
 if (n > lens2)
-concat_str = malloc(sizeof(char *) * (lens1 + lens2 + 1));
+concat_str = malloc(sizeof(char *) * (lens1 + lens2));
 else
-concat_str = malloc(sizeof(char) * (lens1 + n + 1));
+concat_str = malloc(sizeof(char) * (lens1 + n));
 if (concat_str == NULL)
 return (NULL);
-
 while (s1[concat_index] != '\0')
 {
 concat_str[concat_index] = s1[concat_index];
