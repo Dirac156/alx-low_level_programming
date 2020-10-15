@@ -26,5 +26,6 @@ ptr[i] = t;
 t++;
 i++;
 }
+ptr[i] = '\0';
 return (ptr);
 }
