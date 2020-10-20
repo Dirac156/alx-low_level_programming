@@ -21,6 +21,6 @@ if (d->owner != NULL)
 printf("Owner: %s\n", d->owner);
 }
 else
-printf("Owner: nill\n");
+printf("Owner: nil\n");
 }
 }
