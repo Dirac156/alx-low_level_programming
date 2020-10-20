@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stddef.h>
+#include <stdio.h>
 /**
   *init_dog - a function that initialize a Structure
   *@d : our Structure
