@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  * print_list - a function that print all strings from a structure
+  * list_len - a function that print all strings from a structure
   *@h : the head of the struct
   *Return: the length of the string
   */
