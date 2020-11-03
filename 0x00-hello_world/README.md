@@ -6,7 +6,7 @@ This chapter is about learning the fundamental of C programming.
 By fundamental I mean printf function and flag specifier, putchar function, ...
 This chapter make also use of shell basic and compilation process.
 
-#Project
+# Project
 
 **0. Preprocessor**
 Write a script that runs a C file through the preprocessor and save the result into another file.
