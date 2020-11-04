@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-  *free_listint - The function that free a memory location
+  *free_listint2 - The function that free a memory location
   *@head: the head of the linked list
   */
 
@@ -15,5 +15,6 @@ tm = (*head)->next;
 free(*head);
 *head = tm;
 }
+free(*head);
 *head = NULL;
 }
