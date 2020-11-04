@@ -11,7 +11,7 @@ if (!head)
 return (NULL);
 t = (*head)->next;
 (*head)->next = NULL;
-while(t)
+while (t)
 {
 tm = *head;
 *head = t;
