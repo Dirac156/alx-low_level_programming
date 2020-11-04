@@ -13,6 +13,6 @@ tm = (*head)->next;
 free(*head);
 *head = tm;
 }
+free(tm);
 free(*head);
-*head = NULL;
 }
