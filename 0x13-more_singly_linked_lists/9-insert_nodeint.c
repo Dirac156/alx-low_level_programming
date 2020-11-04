@@ -13,13 +13,11 @@ listint_t *tm;
 listint_t *new_node;
 listint_t *last_node;
 new_node = (listint_t *)malloc(sizeof(listint_t));
-
 if (!new_node)
 return (NULL);
 new_node->n = n;
-new_node->next = NULL;
 if (!*head)
-return (0);
+return (NULL);
 else
 {
 if (idx == 0)
@@ -43,6 +41,11 @@ last_node = tm;
 tm = tm->next;
 i++;
 }
+}
+if (idx == i)
+{
+last_node->next = new_node;
+return (new_node);
 }
 return (NULL);
 }
