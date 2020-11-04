@@ -12,7 +12,7 @@ listint_t *tm;
 listint_t *last_node;
 
 if (!*head)
-return (NULL);
+return (-1);
 else
 {
 if (index == 0)

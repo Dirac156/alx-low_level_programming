@@ -42,10 +42,5 @@ tm = tm->next;
 i++;
 }
 }
-if (idx == i)
-{
-last_node->next = new_node;
-return (new_node);
-}
 return (NULL);
 }
