@@ -18,5 +18,6 @@ tm = *head;
 t = (*head)->next;
 (*head)->next = tm;
 }
-return (t);
+
+return (*head);
 }
