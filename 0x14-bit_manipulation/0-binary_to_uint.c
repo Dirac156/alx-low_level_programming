@@ -31,7 +31,7 @@ mult = mult * 2;
 }
 if (rem != 0)
 {
-dec += rem * mult;
+dec += rem *mult;
 }
 i++;
 }
