@@ -9,7 +9,7 @@ unsigned int c;
 unsigned int display_mask = 1 << 31;
 for (c = 1; c < 32; ++c)
 {
-_putchar(n & display_mask? '1': '0');
+_putchar(n & display_mask ? '1' : '0');
 n <<= 1;
 }
 _putchar('\n');
