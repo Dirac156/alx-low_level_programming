@@ -20,5 +20,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 
+_memset((void *)ptr, 0, size * nmemb);
+
 return (ptr);
 }
