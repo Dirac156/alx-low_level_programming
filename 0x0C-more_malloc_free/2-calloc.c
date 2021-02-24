@@ -20,10 +20,5 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (NULL);
 
-while (ptr[i])
-{
-ptr[i] = 0;
-i++;
-}
 return (ptr);
 }
