@@ -1,12 +1,12 @@
 #include "search_algos.h"
 
 /**
-  *linear_search - search algorithm
-  *@array: the array of all element.
-  *@size: the size of the array.
-  *@value: the item.
-  *Return: the item.
-  */
+ *linear_search - search algorithm
+ *@array: the array of all element.
+ *@size: the size of the array.
+ *@value: the item.
+ *Return: the item.
+ */
 
 int linear_search(int *array, size_t size, int value)
 {
